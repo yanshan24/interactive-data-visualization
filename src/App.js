@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import DailyCyclistsCounts from './dailyCyclistsCounts';
 import DailyPedestriansCounts from './dailyPedestriansCounts';
-
+import DailyCountsComparison from './dailyCountsComparison';
 
 function App() {
   return (
@@ -10,10 +10,13 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/dailyCyclistsCounts">Daily Cyclists Counts</Link>
+            <Link to="/dailyCyclistsCounts">Daily Cyclist Counts Trend</Link>
           </li>
           <li>
-            <Link to="/dailyPedestriansCounts">Daily Pedestrians Counts</Link>
+            <Link to="/dailyPedestriansCounts">Daily Pedestrian Counts Trend</Link>
+          </li>
+          <li>
+            <Link to="/dailyCountsComparison">Daily Pedestrian and Cyclist Counts Comparison</Link>
           </li>
         </ul>
       </nav>
@@ -23,6 +26,9 @@ function App() {
         </Route>
         <Route path="/dailyPedestriansCounts">
           <DailyPedestriansCounts />
+        </Route>
+        <Route path="/dailyCountsComparison">
+          <DailyCountsComparison />
         </Route>
       </Switch>
     </BrowserRouter>

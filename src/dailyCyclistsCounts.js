@@ -22,31 +22,39 @@ function DailyCyclistsCounts() {
     }
   fetchParseData()
   }, [])
-
+  
   const groupByTimestamp = groupBy(data, 'Log_Timstamp'); // group by timestamp
 
   const traces = Object.keys(groupByTimestamp)
   .sort((a, b) => new Date(a) - new Date(b)) // sort timestamps in ascending order
   .map((timestamp) => {
     const counts = groupByTimestamp[timestamp];
+    const totalCyclistCount = counts.reduce((acc, count) => {
+      return acc + parseInt(count.Total_Cyclist_Count);
+    }, 0);
     return {
-      x: counts.map((count) => count.Log_Timstamp),
-      y: counts.map((count) => count.Total_Cyclist_Count),
-      type: 'scatter',
-      mode: 'lines',
-      marker: { color: 'red' },
-      name: timestamp,
+      x: [timestamp], // Wrap timestamp in an array
+      y: [totalCyclistCount], // Wrap totalCyclistCount in an array
     };
   });
+
+  const x = traces.map(trace => trace.x[0]);
+  const y = traces.map(trace => trace.y[0]);
 
   return (
     <div>
       <Plot
-        data={traces}
+        data={[{
+          x: x,
+          y: y,
+          type: 'scatter',
+          mode: 'lines',
+          marker: { color: 'orange' }
+        }]}
         layout={{
-          title: 'Daily Cyclist Counts by Timestamp',
+          title: 'Daily Cyclist Counts',
           xaxis: { title: 'Timestamp' },
-          yaxis: { title: 'Total Cyclist Count' },
+          yaxis: { title: 'Total Cyclist Counts Trend' },
           width: '100%',
           height: '100%',
           autosize: true

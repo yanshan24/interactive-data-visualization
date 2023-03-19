@@ -29,24 +29,34 @@ function DailyPedestriansCounts() {
   .sort((a, b) => new Date(a) - new Date(b)) // sort timestamps in ascending order
   .map((timestamp) => {
     const counts = groupByTimestamp[timestamp];
+    const totalPedestrianCount = counts.reduce((acc, count) => {
+      return acc + parseInt(count.Total_Pedestrian_Count);
+    }, 0);
     return {
-      x: counts.map((count) => count.Log_Timstamp),
-      y: counts.map((count) => count.Total_Pedestrian_Count),
-      type: 'scatter',
-      mode: 'lines',
-      marker: { color: 'blue' },
-      name: timestamp,
+      x: [timestamp], // Wrap timestamp in an array
+      y: [totalPedestrianCount], // Wrap totalPedestrianCount in an array
     };
   });
+
+  const x = traces.map(trace => trace.x[0]);
+  const y = traces.map(trace => trace.y[0]);
+
+  console.log(x, y);
 
   return (
     <div>
       <Plot
-        data={traces}
+        data={[{
+          x: x,
+          y: y,
+          type: 'scatter',
+          mode: 'lines',
+          marker: { color: 'blue' }
+        }]}
         layout={{
-          title: 'Daily Pedestrian Counts by Timestamp',
+          title: 'Daily Pedestrian Counts',
           xaxis: { title: 'Timestamp' },
-          yaxis: { title: 'Total Pedestrian Count' },
+          yaxis: { title: 'Total Pedestrian Counts Trend' },
           width: '100%',
           height: '100%',
           autosize: true
