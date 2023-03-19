@@ -4,7 +4,7 @@ import Papa from 'papaparse';
 import groupBy from 'lodash/groupBy';
 import PedestriansAndBikeCountsData from './Daily_Pedestrian_and_Bike_Counts.csv';
 
-function ImportData() {
+function DailyCyclistsCounts() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -56,4 +56,4 @@ function ImportData() {
   );
 }
 
-export default ImportData;
+export default DailyCyclistsCounts;
