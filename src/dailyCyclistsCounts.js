@@ -55,8 +55,8 @@ function DailyCyclistsCounts() {
           title: 'Daily Cyclist Counts',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Cyclist Counts Trend' },
-          width: '100%',
-          height: '100%',
+          width: 1200,
+          height: 500,
           autosize: true
         }}
       />      

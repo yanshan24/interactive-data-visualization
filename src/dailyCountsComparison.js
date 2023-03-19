@@ -60,8 +60,8 @@ function DailyCountsComparison() {
           title: 'Daily Pedestrian and Cyclist Counts Comparison',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Counts' },
-          width: '100%',
-          height: '100%',
+          width: 1200,
+          height: 500,
           autosize: true,
         }}
       />

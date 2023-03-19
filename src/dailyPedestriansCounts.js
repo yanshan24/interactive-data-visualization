@@ -57,8 +57,8 @@ function DailyPedestriansCounts() {
           title: 'Daily Pedestrian Counts',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Pedestrian Counts Trend' },
-          width: '100%',
-          height: '100%',
+          width: 1200,
+          height: 500,
           autosize: true
         }}
       />      
