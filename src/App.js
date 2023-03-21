@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import DailyCyclistsCounts from './dailyCyclistsCounts';
 import DailyPedestriansCounts from './dailyPedestriansCounts';
