@@ -60,7 +60,7 @@ function ParkCounts()
         y_normalized.push(y[i]);
         i = i+1;
       }
-      x_normalized.push(x[11]);
+      x_normalized.push('Others');
       y_normalized.push(y[11]);
 
   //--------STEP 2: DISPLAY THE BAR CHART.--------
