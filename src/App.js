@@ -39,6 +39,7 @@ function App() {
             <h2>Authors</h2>
             <p>Yanshan Wan, Yunfei Xia</p>
           </div>
+        </Route>
         <Route path="/dailyCyclistsCounts">
           <DailyCyclistsCounts />
         </Route>
