@@ -5,6 +5,7 @@ import DailyPedestriansCounts from './dailyPedestriansCounts';
 import DailyCountsComparison from './dailyCountsComparison';
 import ParkCounts from './ParkCounts';
 import ParkAreaComparison from './ParkAreaComparison';
+import './App.css';
 
 
 function App() {
