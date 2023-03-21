@@ -29,7 +29,6 @@ function ParkAreaComparison()
     const groupByClass = groupBy(data, 'Class'); 
     console.log('Park Groupby Result:',groupByClass);
     console.log('Park Groupby Result 1:',groupByClass['Natural Area Park']);
-    const Natural = groupByClass['Natural Area Park'];
 
     const traces = Object.keys(groupByClass) 
     // Get the class names: Natural Area Park, Urban Village Park, Pocket Park...
