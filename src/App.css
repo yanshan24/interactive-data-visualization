@@ -56,3 +56,7 @@ p {
   text-align: center;
   margin: 30px;
 }
+
+.active-link {
+  text-decoration: underline;
+}

@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 import DailyCyclistsCounts from './dailyCyclistsCounts';
 import DailyPedestriansCounts from './dailyPedestriansCounts';
 import DailyCountsComparison from './dailyCountsComparison';
 import ParkCounts from './ParkCounts';
 import ParkAreaComparison from './ParkAreaComparison';
 import './App.css';
-
 
 function App() {
   return (
@@ -15,19 +14,19 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/dailyCyclistsCounts">Daily Cyclist Counts Trend</Link>
+            <NavLink exact to="/dailyCyclistsCounts" activeClassName="active-link">Daily Cyclist Counts Trend</NavLink>
           </li>
           <li>
-            <Link to="/dailyPedestriansCounts">Daily Pedestrian Counts Trend</Link>
+            <NavLink exact to="/dailyPedestriansCounts" activeClassName="active-link">Daily Pedestrian Counts Trend</NavLink>
           </li>
           <li>
-            <Link to="/dailyCountsComparison">Daily Pedestrian and Cyclist Counts Comparison</Link>
+            <NavLink exact to="/dailyCountsComparison" activeClassName="active-link">Daily Pedestrian and Cyclist Counts Comparison</NavLink>
           </li>
           <li>
-            <Link to="/ParkCounts">Edmonton Park Counts by Class</Link>
+            <NavLink exact to="/ParkCounts" activeClassName="active-link">Edmonton Park Counts by Class</NavLink>
           </li>
           <li>
-            <Link to="/ParkAreaComparison">Edmonton Park Area Comparison</Link>
+            <NavLink exact to="/ParkAreaComparison" activeClassName="active-link">Edmonton Park Area Comparison</NavLink>
           </li>
         </ul>
       </nav>
@@ -36,7 +35,7 @@ function App() {
         <Route exact path="/">
           <div>
             <h2>Project Title</h2>
-            <p>An Interactive Look at Park Usage, Pedestrian, and Cycling Trends</p>
+            <p>An Interactive Look at Park, Pedestrian, and Cyclist Data</p>
             <h2>Authors</h2>
             <p>Yanshan Wan, Yunfei Xia</p>
           </div>
@@ -61,6 +60,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
