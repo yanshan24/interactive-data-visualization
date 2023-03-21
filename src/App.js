@@ -32,7 +32,7 @@ function App() {
       </nav>
       
       <Switch>
-        <Route exact path="/">
+        <Route path="/an-interactive-look">
           <div>
             <h2>Project Title</h2>
             <p>An Interactive Look at Park, Pedestrian, and Cyclist Data</p>
