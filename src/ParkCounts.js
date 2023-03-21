@@ -37,7 +37,6 @@ function ParkCounts()
     .map((sortedClass) => {
       // Count the number of each park category
       const counts = groupByClass[sortedClass];
-      const num = counts.length;
       return {
         x: [sortedClass], // Wrap park class
         y: [counts.length], // Wrap total park
