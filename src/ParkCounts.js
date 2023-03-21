@@ -65,7 +65,7 @@ function ParkCounts()
 
   //--------STEP 2: DISPLAY THE BAR CHART.--------
   return(
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
        <Plot
         data={[{
           x: x_normalized,
@@ -77,8 +77,8 @@ function ParkCounts()
           title: 'Edmonton Park Counts by Class',
           xaxis: { title: 'Class Name' },
           yaxis: { title: 'Park Numbers' },
-          width: '100%',
-          height: '100%',
+          width: 1000,
+          height: 500,
           autosize: true
         }}
       />      

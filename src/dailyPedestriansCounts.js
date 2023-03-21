@@ -44,7 +44,7 @@ function DailyPedestriansCounts() {
   console.log(x, y);
 
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Plot
         data={[{
           x: x,
@@ -57,8 +57,8 @@ function DailyPedestriansCounts() {
           title: 'Daily Pedestrian Counts',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Pedestrian Counts Trend' },
-          width: '100%',
-          height: '100%',
+          width: 1000,
+          height: 500,
           autosize: true
         }}
       />      

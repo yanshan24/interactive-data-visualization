@@ -70,7 +70,7 @@ function ParkAreaComparison()
 
     //--------STEP 2: DISPLAY THE BAR CHART.--------
     return(
-    <div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
        <Plot
         data={[{
           values: y_Normalized,
@@ -84,8 +84,8 @@ function ParkAreaComparison()
 
         layout={{
           title: 'Comparison of Different Types of Park Areas',
-          height: 600,
-          width: 600,
+          height: 700,
+          width: 700,
           
         }}
       />      

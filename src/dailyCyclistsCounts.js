@@ -47,7 +47,7 @@ function DailyCyclistsCounts() {
   console.log('x:',x);
   console.log('y:',y);
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Plot
         data={[{
           x: x,
@@ -60,8 +60,8 @@ function DailyCyclistsCounts() {
           title: 'Daily Cyclist Counts',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Cyclist Counts Trend' },
-          width: '100%',
-          height: '100%',
+          width: 1000,
+          height: 500,
           autosize: true
         }}
       />      

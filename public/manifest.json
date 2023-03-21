@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "An Interactive Look",
+  "name": "An Interactive Look at Park Usage, Pedestrian, and Cycling Trends",
   "icons": [
     {
       "src": "favicon.ico",

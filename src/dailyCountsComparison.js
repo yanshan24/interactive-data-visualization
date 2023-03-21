@@ -53,15 +53,15 @@ function DailyCountsComparison() {
   ];
 
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Plot
         data={traces}
         layout={{
           title: 'Daily Pedestrian and Cyclist Counts Comparison',
           xaxis: { title: 'Timestamp' },
           yaxis: { title: 'Total Counts' },
-          width: '100%',
-          height: '100%',
+          width: 1000,
+          height: 500,
           autosize: true,
         }}
       />
