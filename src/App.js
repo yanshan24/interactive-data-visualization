@@ -40,6 +40,22 @@ function App() {
             <p>Yanshan Wan, Yunfei Xia</p>
           </div>
         </Route>
+        <Route path="/interactive-data-visualization">
+          <div>
+            <h2>Project Title</h2>
+            <p>An Interactive Look at Park, Pedestrian, and Cyclist Data</p>
+            <h2>Authors</h2>
+            <p>Yanshan Wan, Yunfei Xia</p>
+          </div>
+        </Route>
+        <Route exact path="/">
+          <div>
+            <h2>Project Title</h2>
+            <p>An Interactive Look at Park, Pedestrian, and Cyclist Data</p>
+            <h2>Authors</h2>
+            <p>Yanshan Wan, Yunfei Xia</p>
+          </div>
+        </Route>
         <Route path="/dailyCyclistsCounts">
           <DailyCyclistsCounts />
         </Route>
