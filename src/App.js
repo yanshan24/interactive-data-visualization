@@ -12,13 +12,6 @@ function App() {
   return (
     <div className = 'App'>
     <BrowserRouter>
-      <div>
-          <header className="App container mt-5">
-            <h1 style ={{color: 'black'}}>An Interactive Look at Park Usage, Pedestrian and Cycling Trends</h1>
-          </header>
-          <h2 style ={{color: 'black'}}>Yanshan Wan, Yunfei Xia</h2>
-  
-      </div>
       <nav>
         <ul>
           <li>
@@ -40,7 +33,13 @@ function App() {
       </nav>
       
       <Switch>
-        
+        <Route exact path="/">
+          <div>
+            <h2>Project Title</h2>
+            <p>An Interactive Look at Park Usage, Pedestrian and Cycling Trends</p>
+            <h2>Authors</h2>
+            <p>Yanshan Wan, Yunfei Xia</p>
+          </div>
         <Route path="/dailyCyclistsCounts">
           <DailyCyclistsCounts />
         </Route>
