@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/an-interactive-look/static/css/main.40abffe7.css",
-    "main.js": "/an-interactive-look/static/js/main.c51c2c7d.js",
-    "static/js/787.6aca7725.chunk.js": "/an-interactive-look/static/js/787.6aca7725.chunk.js",
-    "static/media/Parks.csv": "/an-interactive-look/static/media/Parks.8fb895dccbb52047da21.csv",
-    "static/media/Daily_Pedestrian_and_Bike_Counts.csv": "/an-interactive-look/static/media/Daily_Pedestrian_and_Bike_Counts.f4c7b05de7623f81b9a2.csv",
-    "index.html": "/an-interactive-look/index.html",
-    "main.40abffe7.css.map": "/an-interactive-look/static/css/main.40abffe7.css.map",
-    "main.c51c2c7d.js.map": "/an-interactive-look/static/js/main.c51c2c7d.js.map",
-    "787.6aca7725.chunk.js.map": "/an-interactive-look/static/js/787.6aca7725.chunk.js.map"
+    "main.css": "/interactive-data-visualization/static/css/main.40abffe7.css",
+    "main.js": "/interactive-data-visualization/static/js/main.d6ea1b48.js",
+    "static/js/787.6aca7725.chunk.js": "/interactive-data-visualization/static/js/787.6aca7725.chunk.js",
+    "static/media/Parks.csv": "/interactive-data-visualization/static/media/Parks.8fb895dccbb52047da21.csv",
+    "static/media/Daily_Pedestrian_and_Bike_Counts.csv": "/interactive-data-visualization/static/media/Daily_Pedestrian_and_Bike_Counts.f4c7b05de7623f81b9a2.csv",
+    "index.html": "/interactive-data-visualization/index.html",
+    "main.40abffe7.css.map": "/interactive-data-visualization/static/css/main.40abffe7.css.map",
+    "main.d6ea1b48.js.map": "/interactive-data-visualization/static/js/main.d6ea1b48.js.map",
+    "787.6aca7725.chunk.js.map": "/interactive-data-visualization/static/js/787.6aca7725.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40abffe7.css",
-    "static/js/main.c51c2c7d.js"
+    "static/js/main.d6ea1b48.js"
   ]
 }
