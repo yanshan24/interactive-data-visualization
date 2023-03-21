@@ -41,8 +41,6 @@ function DailyPedestriansCounts() {
   const x = traces.map(trace => trace.x[0]);
   const y = traces.map(trace => trace.y[0]);
 
-  console.log(x, y);
-
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Plot

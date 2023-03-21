@@ -24,7 +24,6 @@ function DailyCyclistsCounts() {
   }, [])
   
   const groupByTimestamp = groupBy(data, 'Log_Timstamp'); // group by timestamp
-  console.log('Cyclists Groupby  Result:',groupByTimestamp);
 
 
   const traces = Object.keys(groupByTimestamp)
@@ -39,13 +38,10 @@ function DailyCyclistsCounts() {
       y: [totalCyclistCount], // Wrap totalCyclistCount in an array
     };
   });
-  console.log('Traces Result:',traces);
 
   const x = traces.map(trace => trace.x[0]);
   const y = traces.map(trace => trace.y[0]);
 
-  console.log('x:',x);
-  console.log('y:',y);
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Plot
